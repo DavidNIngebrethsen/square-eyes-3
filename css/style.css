@@ -138,6 +138,7 @@ h1 {text-align: center;}
 .bold {font-weight: bold;}
 .home-container {justify-content: center;}
 .frontpage-movies {
+    display: flex;
     justify-content: center;
     background-color: var(--dark-color);
     padding: 0.5rem;
