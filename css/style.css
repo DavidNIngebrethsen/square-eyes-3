@@ -164,6 +164,7 @@ h1 {text-align: center;}
     gap: 0.125rem;
 }
 .list-tag {
+    display: flex;
     align-items: center;
     padding: 0.5rem;
     max-height: 3rem;
