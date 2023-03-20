@@ -33,18 +33,13 @@ async function getDetails() {
     const response = await fetch(url);
     const data = await response.json();
     const link = new URLSearchParams(window.location.search)
-    console.log("Data is now ready");
-    console.log(data)
     for (let i = 0; i < data.length; i++) {
         if (data[i].id === Number(link.get("id"))) {
-            console.log(data[i])
             printDetail(data[i])
         }
     }
 }
-console.log("Before log");
 getDetails()
-console.log("after log");
 
 function printDetail(entryData) {
     const title = document.createElement("h1")

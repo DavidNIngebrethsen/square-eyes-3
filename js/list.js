@@ -34,25 +34,19 @@ async function getFilms() {
     const response = await fetch(url);
     const data = await response.json();
     const link = new URLSearchParams(window.location.search)
-    console.log("Data is now ready");
-    console.log(data)
     if (link.get("tags")) {
         for(let i = 0; i < data.length; i++) {
             if (link.get("tags") === data[i].tags[0].slug || link.get("tags") === data[i].tags[1].slug) {
-                console.log(data[i])
                 printFilm(data[i])
             }
         }
     } else {
         for (let i = 0; i < data.length; i++) {
-            console.log(data[i])
             printFilm(data[i])
         }
     }
 }
-console.log("Before log");
 getFilms()
-console.log("after log");
 
 function printFilm(data) {
     const link = document.createElement("a")

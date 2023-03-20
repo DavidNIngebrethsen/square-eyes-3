@@ -5,16 +5,11 @@ const container = document.querySelector(".frontpage-movies")
 async function getFilms() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log("Data is now ready");
-    console.log(data)
     for (let i = 0; i < 3; i++) {
-        console.log(data[i])
         printFilm(data[i])
     }
 }
-console.log("Before log");
 getFilms()
-console.log("after log");
 
 function printFilm(data) {
     const link = document.createElement("a")
