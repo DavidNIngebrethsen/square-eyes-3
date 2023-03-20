@@ -1,4 +1,4 @@
-url = "http://nicko-skogen.no/square-eyes/wp-json/wc/store/products"
+url = "https://nicko-skogen.no/square-eyes/wp-json/wc/store/products"
 category = "products"
 
 const container = document.querySelector(".frontpage-movies")
