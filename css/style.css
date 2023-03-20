@@ -157,6 +157,7 @@ h1 {text-align: center;}
     height: 100%;
 }
 .film-list-tags {
+    display: flex;
     font-size: 1.5rem;
     padding: 1rem;
     overflow: scroll;
@@ -172,6 +173,7 @@ h1 {text-align: center;}
     white-space: nowrap;
 }
 .film-scroll {
+    display: flex;
     padding: 1rem;
     gap: 0.5rem;
     background-color: black;
@@ -194,6 +196,7 @@ h1 {text-align: center;}
     margin: 1rem;
 }
 .purchase-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;

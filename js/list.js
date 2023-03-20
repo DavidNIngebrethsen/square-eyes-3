@@ -1,13 +1,13 @@
 url = "https://nicko-skogen.no/square-eyes/wp-json/wc/store/products"
 
-const container = document.querySelector(".frontpage-movies")
+const container = document.querySelector(".film-scroll")
 
 async function getFilms() {
     const response = await fetch(url);
     const data = await response.json();
     console.log("Data is now ready");
     console.log(data)
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < data.length; i++) {
         console.log(data[i])
         printFilm(data[i])
     }
